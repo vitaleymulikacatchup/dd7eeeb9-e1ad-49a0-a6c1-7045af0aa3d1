@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
@@ -12,9 +12,9 @@ import SocialProofOne from '@/components/sections/socialProof/SocialProofOne';
 import FaqBase from '@/components/sections/faq/FaqBase';
 import ContactCenterForm from '@/components/sections/contact/ContactCenterForm';
 import FooterBase from '@/components/sections/footer/FooterBase';
-import { Award, Briefcase, Building, Gift, HelpCircle, Heart, Home, MessageCircle, Sparkles, Star, Trophy, Users } from "lucide-react";
+import { Award, Briefcase, Building, Gift, HelpCircle, Heart, MessageCircle, Sparkles, Star, Trophy, Users } from "lucide-react";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <ThemeProvider
       defaultButtonVariant="slide-background"
@@ -55,7 +55,7 @@ export default function Home() {
             }
           ]}
           imageSrc="https://images.pexels.com/photos/189295/pexels-photo-189295.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-          imageAlt="Luxury hotel lobby with elegant interior design"
+          imageAlt="Elegant lobby with comfortable sofas, large windows, and natural light enhancing the indoor ambiance."
           imagePosition="right"
         />
       </div>
@@ -65,28 +65,28 @@ export default function Home() {
           title="Luxury Accommodations"
           description="Choose from our selection of elegantly appointed rooms and suites, each designed to provide the ultimate in comfort and sophistication."
           tag="Premium Rooms"
-          tagIcon={Home}
+          tagIcon={Building}
           products={[
             {
               id: "deluxe",
               name: "Deluxe Ocean View",
               price: "$399/night",
               imageSrc: "https://images.pexels.com/photos/31817153/pexels-photo-31817153.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              imageAlt: "Deluxe room with ocean view"
+              imageAlt: "Luxurious hotel room with a stunning ocean view and private jacuzzi."
             },
             {
               id: "suite",
               name: "Executive Suite",
               price: "$799/night",
               imageSrc: "https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              imageAlt: "Executive suite with luxury amenities"
+              imageAlt: "A soft-lit hotel room entrance, welcoming guests with luxury appeal and comfort."
             },
             {
               id: "penthouse",
               name: "Presidential Penthouse",
               price: "$1,999/night",
               imageSrc: "https://images.pexels.com/photos/26859049/pexels-photo-26859049.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              imageAlt: "Presidential penthouse with panoramic views"
+              imageAlt: "Modern hotel room with a large bed, hot tub, and scenic balcony view."
             }
           ]}
           buttons={[
@@ -109,7 +109,7 @@ export default function Home() {
               title: "Luxury Spa & Wellness",
               description: "Rejuvenate your body and mind at our award-winning spa featuring therapeutic treatments and state-of-the-art wellness facilities.",
               imageSrc: "https://images.pexels.com/photos/6957079/pexels-photo-6957079.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              imageAlt: "Luxury spa wellness center",
+              imageAlt: "Serene indoor pool area with modern design and spiral staircase.",
               button: {
                 text: "Book Spa",
                 href: "https://booking.example.com/spa"
@@ -119,7 +119,7 @@ export default function Home() {
               title: "Rooftop Infinity Pool",
               description: "Take a refreshing dip in our stunning infinity pool while enjoying breathtaking panoramic city views from the rooftop.",
               imageSrc: "https://images.pexels.com/photos/2149421/pexels-photo-2149421.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              imageAlt: "Rooftop infinity pool with city views",
+              imageAlt: "Serene rooftop infinity pool with stunning ocean view under a bright blue sky.",
               button: {
                 text: "Pool Hours",
                 href: "https://booking.example.com/pool"
@@ -129,7 +129,7 @@ export default function Home() {
               title: "Fine Dining Restaurant",
               description: "Savor exquisite culinary creations prepared by our world-renowned chefs in an atmosphere of refined elegance.",
               imageSrc: "https://images.pexels.com/photos/2291636/pexels-photo-2291636.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              imageAlt: "Fine dining restaurant interior",
+              imageAlt: "Elegant rooftop restaurant with poolside dining at sunset. Perfect for a luxurious dining experience.",
               button: {
                 text: "Make Reservation",
                 href: "https://booking.example.com/dining"
@@ -237,7 +237,7 @@ export default function Home() {
               role: "CEO, Global Ventures",
               testimonial: "Absolutely exceptional experience from check-in to departure. The attention to detail and personalized service exceeded all expectations. The ocean view from our suite was breathtaking.",
               imageSrc: "https://images.pexels.com/photos/789822/pexels-photo-789822.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              imageAlt: "Portrait of Sarah Richardson"
+              imageAlt: "Confident businesswoman using her tablet and phone, smiling outdoors in sunlight."
             },
             {
               id: "2",
@@ -245,7 +245,7 @@ export default function Home() {
               role: "Investment Director",
               testimonial: "The perfect blend of luxury and comfort. Every staff member went above and beyond to ensure our stay was perfect. The spa treatments were world-class and the dining was extraordinary.",
               imageSrc: "https://images.pexels.com/photos/12885861/pexels-photo-12885861.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              imageAlt: "Portrait of Michael Chen"
+              imageAlt: "Confident businessman in suit shaking hands at office desk, symbolizing successful partnership."
             },
             {
               id: "3",
@@ -253,7 +253,7 @@ export default function Home() {
               role: "Creative Director",
               testimonial: "From the moment we arrived, we felt like royalty. The penthouse suite was magnificent and the rooftop pool offered incredible views. This hotel sets the standard for luxury hospitality.",
               imageSrc: "https://images.pexels.com/photos/34520848/pexels-photo-34520848.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              imageAlt: "Portrait of Isabella Martinez"
+              imageAlt: "Young woman in a studio setting holding a book with professional lighting."
             },
             {
               id: "4",
@@ -261,7 +261,7 @@ export default function Home() {
               role: "Technology Executive",
               testimonial: "Outstanding service and facilities that truly define five-star luxury. The business amenities were excellent and the concierge team made our corporate event seamless and memorable.",
               imageSrc: "https://images.pexels.com/photos/3184419/pexels-photo-3184419.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              imageAlt: "Portrait of David Thompson"
+              imageAlt: "A diverse team celebrating success with raised hands in a modern office setting."
             }
           ]}
         />
